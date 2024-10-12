@@ -1,10 +1,12 @@
+console.log("INSIDE APP.JS")
 const express = require("express");
 const cookieParser = require("cookie-parser"); 
 const dotenv = require("dotenv");
 dotenv.config();
-
+console.log("SECOND")
 const { handle404Error, handleGlobalError, } = require("./middlewares");
 const { v1Routes } = require("./routes/v1");
+console.log("THIRD")
 const { cors } = require("./config");
 const path = require("path");
 const app = express();
